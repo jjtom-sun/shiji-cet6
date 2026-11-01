@@ -1,0 +1,25 @@
+{
+  "name": "拾级 · 六级研习室",
+  "short_name": "拾级",
+  "description": "为大学英语六级打造的系统化研习工作台：分级词汇、精听听写、长难句拆解、写作翻译批改、全真模考与能力诊断。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./#/dashboard",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f6f2e9",
+  "theme_color": "#f6f2e9",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "今日词汇复习", "short_name": "词汇", "url": "./#/vocab?tab=review", "icons": [{ "src": "assets/img/icon-192.png", "sizes": "192x192" }] },
+    { "name": "听力实验室", "short_name": "听力", "url": "./#/listening", "icons": [{ "src": "assets/img/icon-192.png", "sizes": "192x192" }] },
+    { "name": "全真模考", "short_name": "模考", "url": "./#/mock", "icons": [{ "src": "assets/img/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

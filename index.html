@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拾级 · 六级研习室</title>
+  <meta name="description" content="为大学英语六级打造的系统化研习工作台：分级词汇、精听听写、长难句拆解、写作翻译批改、全真模考与能力诊断。">
+  <meta name="theme-color" content="#f7f4ec">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/listening-real.css">
+  <script>
+    (function () {
+      try {
+        var t = JSON.parse(localStorage.getItem('cet6studio.v1') || '{}');
+        var theme = t && t.settings && t.settings.theme;
+        if (theme && theme !== 'auto') document.documentElement.dataset.theme = theme;
+        else if (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark';
+      } catch (e) { /* first visit */ }
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#view">跳到主要内容</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="主导航"></aside>
+    <div class="app-main">
+      <header class="topbar" id="topbar"></header>
+      <main class="view" id="view" tabindex="-1">
+        <div class="boot-state">
+          <div class="boot-mark" aria-hidden="true"></div>
+          <p>正在铺开你的研习桌…</p>
+        </div>
+      </main>
+      <footer class="site-foot" id="site-foot"></footer>
+    </div>
+  </div>
+  <div class="nav-scrim" id="nav-scrim" hidden></div>
+  <div class="modal-root" id="modal-root"></div>
+  <div class="toast-root" id="toast-root" aria-live="polite" aria-atomic="true"></div>
+
+  <noscript>
+    <div class="noscript">这个研习室需要 JavaScript 才能运行。请在浏览器设置中启用 JavaScript。</div>
+  </noscript>
+
+  <script defer src="assets/js/core/utils.js"></script>
+  <script defer src="assets/js/core/icons.js"></script>
+  <script defer src="assets/js/core/store.js"></script>
+  <script defer src="assets/js/core/charts.js"></script>
+  <script defer src="assets/js/core/speech.js"></script>
+  <script defer src="assets/js/core/engine.js"></script>
+  <script defer src="assets/js/core/tutor.js"></script>
+  <script defer src="assets/js/core/progress.js"></script>
+
+  <script defer src="assets/js/data/vocab.data.js"></script>
+  <script defer src="assets/js/data/vocab-more.data.js"></script>
+  <script defer src="assets/js/data/vocab-listening.data.js"></script>
+  <script defer src="assets/js/data/vocab-full.data.js"></script>
+  <script defer src="assets/js/data/listening.data.js"></script>
+  <script defer src="assets/js/data/listening-real.data.js"></script>
+  <script defer src="assets/js/data/reading.data.js"></script>
+  <script defer src="assets/js/data/reading-passages.data.js"></script>
+  <script defer src="assets/js/data/writing.data.js"></script>
+  <script defer src="assets/js/data/exam.data.js"></script>
+
+  <script defer src="assets/js/views/dashboard.js"></script>
+  <script defer src="assets/js/views/vocab.js"></script>
+  <script defer src="assets/js/views/listening.js"></script>
+  <script defer src="assets/js/views/listening-real.js"></script>
+  <script defer src="assets/js/views/reading.js"></script>
+  <script defer src="assets/js/views/writing.js"></script>
+  <script defer src="assets/js/views/errors.js"></script>
+  <script defer src="assets/js/views/mock.js"></script>
+  <script defer src="assets/js/views/analytics.js"></script>
+  <script defer src="assets/js/views/tutor-view.js"></script>
+  <script defer src="assets/js/views/settings.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</body>
+</html>

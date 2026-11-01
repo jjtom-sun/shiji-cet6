@@ -1,0 +1,14 @@
+{
+  "name": "shiji-cet6-studio",
+  "version": "1.2.3",
+  "private": true,
+  "description": "拾级 · 六级研习室：分级词汇、精听听写、长难句拆解、写作翻译批改、全真模考与能力诊断。",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js",
+    "lan": "node serve.js --lan"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
